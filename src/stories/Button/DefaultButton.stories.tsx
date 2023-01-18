@@ -1,19 +1,23 @@
-import type { Meta, StoryObj } from "@storybook/react"
-import { Button } from "./Button"
+import type { Meta, StoryFn } from "@storybook/react"
+import { mui } from "../../mui"
+import { argTypes } from "./argTypes"
 
-const meta = {
+export default {
     title: "Button",
-    component: Button,
-    tags: ["autodocs"],
+    component: mui.Button,
+    parameters: {
+        layout: "fullscreen"
+    },
     argTypes: {
-        backgroundColor: { control: "color" },
-    },
-} satisfies Meta<typeof Button>
+        ...argTypes,
+    }
+} as Meta
 
-export default meta
-type Story = StoryObj<typeof meta>
+const Template: StoryFn = (args: mui.ButtonProps) => (
+    <mui.Button {...args}>Button</mui.Button>
+)
 
-export const Default: Story = {
-    args: {
-    },
+export const Primary = Template.bind({})
+Primary.args = {
+    color: "secondary",
 }
