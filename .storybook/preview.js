@@ -1,3 +1,5 @@
+import { withMuiTheme } from "./with-mui-theme.decorator"
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -6,4 +8,16 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  backgrounds: {
+    default: "light",
+    values: [
+      {
+        name: "light",
+        value: "#fff",
+      }
+    ]
+  },
 }
+export const decorators = [
+  withMuiTheme,
+]

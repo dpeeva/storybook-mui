@@ -17,7 +17,10 @@ const Template: StoryFn = (args: mui.ButtonProps) => (
     <mui.Button {...args}>Button</mui.Button>
 )
 
-export const Primary = Template.bind({})
-Primary.args = {
+export const Default = Template.bind({})
+Default.args = {
+    variant: "contained",
     color: "secondary",
+    size: "small",
+    disabled: false,
 }
