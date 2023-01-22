@@ -1,10 +1,12 @@
+import { baseColors } from "../constants"
+
 export const argTypes = {
     variant: {
         options: ["contained", "outlined", "text"],
         control: { type: "radio" },
     },
     color: {
-        options: ["primary", "secondary", "info", "warning", "error", "success"],
+        options: [...baseColors, "inherit"],
         control: { type: "select" },
     },
     size: {
