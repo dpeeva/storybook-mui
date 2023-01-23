@@ -14,6 +14,10 @@ export const parameters = {
             {
                 name: "light",
                 value: "#fff",
+            },
+            {
+                name: "dark",
+                value: "#181818",
             }
         ]
     },
@@ -21,3 +25,20 @@ export const parameters = {
 export const decorators = [
     withMuiTheme,
 ]
+
+export const globalTypes = {
+    theme: {
+        name: "Theme",
+        title: "Theme",
+        description: "Theme for your components",
+        defaultValue: "light",
+        toolbar: {
+            icon: "paintbrush",
+            dynamicTitle: true,
+            items: [
+                { value: "light", left: "☀️", title: "Light mode" },
+                { value: "dark", left: "🌙", title: "Dark mode" },
+            ],
+        },
+    },
+}

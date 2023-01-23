@@ -1,6 +1,6 @@
 /* istanbul ignore file */
 
-import { baseColors } from "../constants";
+import { baseColors } from "../constants"
 
 export const argTypes = {
     color: {
@@ -8,7 +8,7 @@ export const argTypes = {
         control: { type: "select" },
     },
     size: {
-        options: ["xs", "small", "medium", "large"],
+        options: ["small", "medium", "large"],
         control: { type: "radio" },
     },
     indeterminate: {
