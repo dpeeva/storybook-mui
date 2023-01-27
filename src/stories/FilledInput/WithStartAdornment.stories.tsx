@@ -3,7 +3,7 @@ import { mui, muiIcons } from "../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/FilledInput",
+    title: "FilledInput",
     component: mui.FilledInput,
     parameters: {
         layout: "fullscreen"
