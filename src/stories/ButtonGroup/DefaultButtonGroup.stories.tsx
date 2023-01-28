@@ -33,7 +33,7 @@ const Template: StoryFn = ({
 export const Default = Template.bind({})
 Default.args = {
     variant: "contained",
-    color: "secondary",
+    color: "primary",
     size: "small",
     disabled: false,
     text: "Button"

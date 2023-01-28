@@ -39,7 +39,7 @@ const Template: StoryFn = ({
 export const WithStartIcon = Template.bind({})
 WithStartIcon.args = {
     variant: "contained",
-    color: "secondary",
+    color: "primary",
     size: "small",
     disabled: false,
 }

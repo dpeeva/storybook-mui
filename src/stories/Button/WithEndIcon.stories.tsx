@@ -39,7 +39,7 @@ const Template: StoryFn = ({
 export const WithEndIcon = Template.bind({})
 WithEndIcon.args = {
     variant: "contained",
-    color: "secondary",
+    color: "primary",
     size: "small",
     disabled: false,
 }

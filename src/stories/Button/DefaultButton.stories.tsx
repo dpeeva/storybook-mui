@@ -20,7 +20,7 @@ const Template: StoryFn = (args: mui.ButtonProps) => (
 export const Default = Template.bind({})
 Default.args = {
     variant: "contained",
-    color: "secondary",
+    color: "primary",
     size: "small",
     disabled: false,
 }
