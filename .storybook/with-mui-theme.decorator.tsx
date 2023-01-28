@@ -1,10 +1,11 @@
 import * as React from "react"
 import { mui } from "../src/mui"
-import { light, dark } from "../src/themes"
+import { light, dark, joy } from "../src/themes"
 
 const THEMES = {
     light,
     dark,
+    joy
 }
 
 export const withMuiTheme = (Story, context) => {

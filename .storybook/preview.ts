@@ -22,6 +22,16 @@ export const parameters = {
         ]
     },
 }
+
+export const argTypes = {
+    mode: {
+        options: ["joy", "light", "dark"],
+        control: { type: "radio" }
+    }
+}
+
+export const args = { mode: "joy" }
+
 export const decorators = [
     withMuiTheme,
 ]
@@ -31,13 +41,14 @@ export const globalTypes = {
         name: "Theme",
         title: "Theme",
         description: "Theme for your components",
-        defaultValue: "light",
+        defaultValue: "joy",
         toolbar: {
             icon: "paintbrush",
             dynamicTitle: true,
             items: [
                 { value: "light", left: "☀️", title: "Light mode" },
                 { value: "dark", left: "🌙", title: "Dark mode" },
+                { value: "joy", left: "🐠", title: "Joy mode" },
             ],
         },
     },
